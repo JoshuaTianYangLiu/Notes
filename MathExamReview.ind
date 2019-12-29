@@ -1,0 +1,50 @@
+\begin{theindex}
+
+  \item CAST Rule
+    \subitem $\cos(180+\theta)=-\cos\theta$, \hyperpage{7}
+    \subitem $\cos(180-\theta)=-\cos\theta$, \hyperpage{7}
+    \subitem $\cos(360-\theta)=\cos\theta$, \hyperpage{7}
+    \subitem $\cos\theta=\cos\theta$, \hyperpage{7}
+    \subitem $\sin(180+\theta)=-\sin\theta$, \hyperpage{7}
+    \subitem $\sin(180-\theta)=\sin\theta$, \hyperpage{7}
+    \subitem $\sin(360-\theta)=-\sin\theta$, \hyperpage{7}
+    \subitem $\sin\theta=\sin\theta$, \hyperpage{7}
+    \subitem $\tan(180+\theta)=\tan\theta$, \hyperpage{7}
+    \subitem $\tan(180-\theta)=-\tan\theta$, \hyperpage{7}
+    \subitem $\tan(360-\theta)=-\tan\theta$, \hyperpage{7}
+    \subitem $\tan\theta=\tan\theta$, \hyperpage{7}
+  \item Compound Interest
+    \subitem $A=P(1+\frac{r}{n})^{nt}$, \hyperpage{13}
+  \item Cosine Law
+    \subitem $c^2=a^2+b^2-2ab\cos C$, \hyperpage{8}
+
+  \indexspace
+
+  \item Future Value Formula
+    \subitem $FV=P\frac{(1+\frac{r}{n})^{nt}-1}{\frac{r}{n}}$, 
+		\hyperpage{13}
+
+  \indexspace
+
+  \item Quadratic Formula
+    \subitem $x=\frac  {-b\pm \sqrt  {b^2-4ac}}{2a}$, \hyperpage{5}
+
+  \indexspace
+
+  \item Sine Law
+    \subitem $\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}$, 
+		\hyperpage{8}
+
+  \indexspace
+
+  \item Trig Identity
+    \subitem $\sin^2\theta+\cos^2\theta=1$, \hyperpage{9}
+    \subitem $\tan\theta=\frac{\sin\theta}{\cos\theta}$, \hyperpage{10}
+
+  \indexspace
+
+  \item X value of vertex
+    \subitem $-\frac{b}{2a}$, \hyperpage{14}
+    \subitem $\frac{x_1+x_2}{2}$, \hyperpage{14}
+
+\end{theindex}

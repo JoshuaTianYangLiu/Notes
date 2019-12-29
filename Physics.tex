@@ -1,7 +1,233 @@
-\documentclass[12pt]{article}
+\documentclass[10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+
+
+\hypersetup{
+    linkcolor=blue
+}
+
+\title{Physics}
+\author{Joshua Liu}
+\date{December 2019}
+
 
 \begin{document}
-Hello There
+\maketitle
+\section{Wave Interactions}
+The things we learned before is about a single wave. This lesson is about multiple waves
+and what could happen.
+\textbf{Principle of super position} at any point the amplitude of two interfering waves
+is the same of the waves.
+
+\textbf{Constructive Interference} the process of forming a wave with a larger
+amplitude when two or more waves combine
+
+\textbf{Destructive Interference} the process of forming a wave with a smaller amplitude when two or more waves combine
+
+These two terms are similar to just saying "add" the two waves
+
+We can also draw the resultant wave by hand
+
+\section{Sound boundaries in Media}
+$$\frac{v_1}{v_2}=\frac{\lambda_1}{\lambda_2}$$
+
+Example:
+A sound wave of wavelength 0.75 m is travelling in air at $0.0^{\circ}C$ when it
+hits a block of steel at the same temperature. 
+\begin{itemize}
+    \item What is the frequency of the sound wave?
+    
+    $$v_1=331.4m/s$$
+    $$\lambda=0.75m$$
+
+    \begin{align*}
+        f&=\frac{v_1}{\lambda}=\frac{331.4}{0.75}\\
+        &=441.87
+    \end{align*}
+    \item What is the wavelength of the sound wave in steel, if the speed of sound in steel is 5050 m/s;
+    $$v_{steel}=\lambda f$$
+    \begin{align*}
+        \lambda_{steel}&=\frac{u_{steel}}{f}\\
+        &=\frac{5050m/s}{441.86Hz}\\
+        &=11.43m
+    \end{align*}
+    
+\end{itemize}
+
+When there's an incoming pulse, depending on if the other end is not connected (free-end), or if its connected to a fixed end (fixed-end), or if it's connected to another dense or more dense medium, different things will happen.
+\subsection{Sound boundaries in media: Reflection}
+
+\textbf{Free-end reflection}: If the end of the wave is not connected to anything,
+what will happen is the wave will reach the end and bounce back (reflection) and go back the other way
+
+In more scientific term, it will reflect with \emph{No Phase Shift}
+
+\textbf{Fixed-End reflection}: If the end of the wave is attached to an object which wont move (a wall), what will happen is it will bounce back and but upside down.
+
+Scientific terms: is will reflect with \emph{Phase shift of $\frac{\lambda}{2}$}
+
+\subsection{Sound boundaries in media: Transmission}
+
+\textbf{Heavy to light}: When a "heavy" wave is attached to a "light" wave, there is transmission from the "heavy" wave to the "light" wave, Thinking about it, the transmission of the "heavy" wave is familiar to the free-end reflection, this is true as this acts similar to the free-end reflection
+
+\textbf{Light to heavy}: When a "Light" wave is attached to a "heavy" wave, there is transmission from the "light" wave to the "heavy" waves, The end of the "light" acts similar to a fixed point, as it takes more energy to lift the "heavy" wave. So this acts more like a fixed-end reflection
+
+A good visualization for these types of sound boundaries in media is a animation found on the internet \href{http://physics.bu.edu/~duffy/semester1/c21_int_reflections.html}{link}.
+
+\section{Standing Waves}
+Note that this is in terms of stationary interference   (TODO: Figure this out)
+
+\textbf{Node}: The points which represent the middle of the wave
+
+Scientific terms: Is the location where the particles of the medium are
+at rest due to destructive interference between crest and trough. 
+
+\textbf{Antinode}: The points which are the crest (maximum) and trough (minimum). The points which travel the most distance vertically (Twice the amplitude)
+
+Scientific terms: Is the location where the particles of the medium are moving with the greatest amplitude which is twice the amplitude of the original wave due to constructive interference between crest and crest or trough and trough.
+
+\textbf{Fundamental frequency}: The "zero" of the frequency, the lowest frequency for a standing wave.
+
+Scientific terms: The lowest frequency that can produce a standing wave in a given medium.
+
+
+\textbf{Harmonic}: A frequency where a multiple of the fundamental frequency
+
+Scientific terms: whole-number multiples of the fundamental frequency
+
+\textbf{Overtone}: Idk
+
+Scientific terms: A sound resulting from a string that vibrates with more than one frequency
+
+Example:
+Standing waves are produced in a string by a source with a frequency
+of 10 Hz. The distance between the third and sixth node is 54 cm.
+
+What is the wavelength of the interfering waves?
+$$f=10Hz$$
+
+$$\frac{\lambda}{2}=\frac{54}{3}=18$$
+
+$$\lambda=0.36m$$
+What is their speed?
+
+$$v=\lambda*f$$
+$$=0.36*10$$
+$$=3.6m/s$$
+
+\section{Mechanical Resonance}
+
+\textbf{Mechanical Resonance}: When the oscillation matches the natural frequency of the object, meaning it adds up to each other (There's a Matt Parker video on resonance which shows human examples such as people walking on a bridge at a perfect frequency \href{https://www.youtube.com/watch?v=6JwEYamjXpA}{Video Here}. Start around 10min)
+
+Scientific terms: The tendency of an object to respond to when the frequency of its oscillations matches the system's natural frequency of vibration 
+
+Example: When using tuning forks where they have the same frequency, if you hit one in a setup shown in slide 21, the frequency resonates with the second tuning fork as it has the same frequency. 
+
+If two different tuning forks are setup the same way and one is hit, the other tuning fork will not resonate.
+
+\subsection{Resonance and Wind Musical Instruments}
+% TODO Write stuff about this understand this
+
+The sixth harmonic of a 65 cm guitar string is heard. If the speed of sound in the string is 206 m/s, what is the frequency of the standing wave?
+
+$$L = 0.65m, n = 6, v=206m/s$$
+
+$$L=\frac{n\lambda}{2}$$
+$$0.65=\frac{6\lambda}{2}$$
+$$0.217=\lambda$$
+$$f=\frac{v}{\lambda}$$
+$$=\frac{206}{0.217}$$
+$$=949.309Hz$$
+
+The speed of sound in an air column with a fixed end and a free end is 350 m/s. The frequency of the wave is 200.0 Hz. What length of air column to produce a standing wave with the first harmonic?
+
+$$v=350,f=200,n=1$$
+$$L=\frac{(2n-1)\lambda}{4}=\frac{\lambda}{4}$$
+$$\lambda=\frac{v}{f}$$
+$$=\frac{350}{200}$$
+$$=1.75$$
+$$L=\frac{1.75}{4}$$
+$$=0.4375m$$
+
+An air column that is open at both ends is 1.50 m long. A specific frequency is heard resonating from the column. What is the longest wavelength and its associated frequency that could be responsible for this resonance? The speed of sound in air is 345 m/s.
+
+$$L=1.5,n=1,v=345m/s$$
+$$L=\frac{n\lambda}{2}=\frac{\lambda}{2}$$
+$$\lambda=1.5*2=3$$
+$$f=\frac{v}{\lambda}$$
+$$=\frac{345}{3}$$
+$$=115Hz$$
+
+Using the same tuning fork, an air column with one closed end resonates at two consecutive lengths of 90.0 cm and 150 cm. If the speed of sound is 350 m/s.
+
+Notice how it says consecutive, meaning the next place it resonates is 150, as it's consecutive we know it will have travelled $\frac{\lambda}{2}$ between the consecutive lengths.
+\begin{enumerate}
+    \item What is the resonant frequency of the air column?
+    $$L_2-L_1=\frac{\lambda}{2}$$
+    $$1.5-0.9=\frac{\lambda}{2}$$
+    $$1.2=\lambda$$
+    $$f=\frac{v}{\lambda}$$
+    $$=\frac{350}{1.2}$$
+    $$=291.7$$
+    \item What is the harmonic number for the two columns?
+    $$L_1=\frac{(2n-1)\lambda}{4}$$
+    $$4*0.9=(2n-1)*1.2$$
+    $$2=n$$
+    $$L_2=\frac{(2n-1)\lambda}{4}$$
+    $$4*1.5=(2n-1)*1.2$$
+    $$3=n$$
+\end{enumerate}
+
+\section{Musical Instruments}
+%Hello Future me, I became too lazy and tired to write this part, have fun!
+
+A guitar string of length 0.80 m has a frequency of 375 Hz. When it is shortened to 0.60 m, what is its new frequency?
+
+$$l_1=0.8,l_2=0.6,f_1=375$$
+$$\frac{l_1}{l_2}=\frac{f_2}{f_1}$$
+$$\frac{f_1l_1}{l_2}=f_2$$
+$$\frac{375*0.8}{0.6}=f_2$$
+$$500=f_2$$
+
+A string has an original tension of 150 N. What new tension must be applied to the string to have it vibrate with a frequency exactly twice that of the original?
+
+$$f_1=f_1,f_2=2f_1,T_1=150$$
+$$\frac{f_1}{f_2}=\frac{\sqrt{T_1}}{\sqrt{T_2}}$$
+$$\frac{f_1}{2f_1}=\frac{\sqrt{150}}{\sqrt{T_2}}$$
+$$\frac{1}{2}=\frac{\sqrt{150}}{\sqrt{T_2}}$$
+$$\frac{1}{4}=\frac{150}{T_2}$$
+$$600=T_2$$
+
+\subsection{Beats}
+%More stuff for future me :>
+
+A piano tuner strikes a 256 Hz (middle C) tuning fork and middle C on a piano. She hears 20 beats in 5.0 s. What are the possible frequencies of the out-of-tune note?
+
+$$f_b=\frac{20}{4}$$
+$$=4Hz$$
+$$f_b=|f_2-f_1|$$
+$$4=|f_2-256|$$
+$$f_2=260,252$$
+
+\section{Electricity}
+%Curse past me for not getting the presentation
+
+
+A glass rod with a charge of $5.4*10^8$ electrons touches another insulator so that all of the excess electrons are shared equally. What is the final charge on the glass rod?
+$$N=\frac{5.4*10^8}{2}$$
+$$=2.7*10^8$$
+
+$$Q=Ne$$
+$$=2.7*10^8*-1.6*10^{-19}$$
+$$=-4.3*10^{-11}$$
+
+How much current flows through a hair dryer if 1400 C of charge pass through it in 2.25 minutes?
+$$I=\frac{Q}{t}$$
+$$=\frac{1400}{2.25*60}$$
+$$10.37A$$
+
 \end{document}
