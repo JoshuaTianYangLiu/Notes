@@ -13,6 +13,7 @@
 \usepackage{wrapfig}
 \usepackage{imakeidx}
 \usepackage{amssymb}
+\usepackage{xcolor}
 \usepackage{hyperref} 
 \usepackage[margin=1in]{geometry}
 
@@ -20,13 +21,14 @@
 
 \title{Math Exam Review: Answers}
 \author{Joshua Liu\\
-Discord: Josh\#4217} %Got to figure out how to add the tree emojis
+Discord: JoshL\#4217\\ %Got to figure out how to add the tree emojis
+Email: josh.liu@student.tdsb.on.ca}
 \date{\today}
 
 \begin{document}
 \maketitle
 \section{Introduction}
-
+This document is meant to be used as tool for relearning anything you might have forgotten during the school year. This is the solution to every question in the exam review. \textbf{If there is any problem, anything you don't understand, or anything that is not clear, please contact me on Discord: JoshL\#4217 or by Email: josh.liu@student.tdsb.on.ca. I will be able to update this document and improve it.}
 \section{Exam review questions}
 \begin{enumerate}
     \item For what values of the variable(s) is each rational expression not defined?
@@ -578,7 +580,7 @@ Maximum area is the average of the $x_1,x_2$, meaning maximum area is where $x=\
             \item $f(x)=\frac{2x}{x+1}$
             \begin{align*}
                 x&=\frac{2f'(x)}{f'(x)+1}\\
-                xf'(x)+x&=2f'(x)\\
+                x f'(x)+x&=2f'(x)\\
                 f'(x)(x-2)&=-x\\
                 f'(x)&=\frac{x}{2-x}\\
                 &\text{This inverse is a function}
@@ -592,7 +594,7 @@ Maximum area is the average of the $x_1,x_2$, meaning maximum area is where $x=\
                 &\text{This inverse is not a function}
             \end{align*}
         \end{enumerate}
-    \item Given $f(x)=\frac{1}{x}$ %So desmos is better
+    \item Given $f(x)=\frac{1}{x}$ 
     \begin{enumerate}
         \item Sketch the image of $y=2f(-\frac{1}{2}x)+3$
         
@@ -612,6 +614,254 @@ Maximum area is the average of the $x_1,x_2$, meaning maximum area is where $x=\
             R&=\{y\in\mathbb{R}\mid y\neq 3\}\\
         \end{align*}
     \end{enumerate}
+    \item Sketch on following curves on the same grid.
+    \begin{enumerate}
+        \item \textcolor{red}{$y=\sqrt{x}$}
+        \item \textcolor{blue}{$y=-3\sqrt{x}$}
+        \item \textcolor{green}{$y=\sqrt{-x}+4$}
+        \item \textcolor{purple}{$y=\sqrt{x-3}-2$}
+        
+        \includegraphics[scale=0.2]{MathExamReview/36-graph.png}
+    \end{enumerate}
+    \item Determine the inverse of $y=(x-3)^2+5$ and state its domain (the inverse) Sketch both curves on the same grid
+    
+    \begin{align*}
+        y&=(x-3)^2+5\\
+        x&=(y'-3)^2+5\\
+        x-5&=(y'-3)^2\\
+        \pm\sqrt{x-5}&=y'-3\\
+        3\pm\sqrt{x-5}&=y\\
+        D'&=\{x\in\mathbb{R}\mid 5\le x\}
+    \end{align*}
+    \includegraphics[scale=0.2]{MathExamReview/37-graph.png}
+    \item For each of the following sequences.
+    \begin{enumerate}
+        \item Find a possible formula for $t_n$
+        \item Use your formula to find $t_{21}$. Express your answer in exact values only
+        \begin{enumerate}
+            \item $6,-18,54$
+            
+            This is a geometric sequence, following the pattern $a,ar,ar^2,ar^3\ldots$ The general/explicit formula is $a_n=a_1r^{n-1}$ and the recursive formula is $a_n=ra_{n-1}$\index{Geometric sequence!$a_n=a_1r^{n-1}$}\index{Geometric sequence!$a_n=ra_{n-1}$}
+
+            \begin{align*}
+                r&=\frac{-18}{6}&a_1&=6\\
+                r&=-2
+                a_n&=6\times(-2)^{n-1}\\
+                a_{21}&=6\times(-2)^{21-1}\\
+                a_{21}&=6291456\\
+            \end{align*}
+            \item $\frac{4}{5},\frac{7}{25},\frac{10}{125}$
+            
+            This is not a geometric or arithmetic sequence, but a pattern. Notice how the numerator is in increments of 3 and the denominator is multiplied by 5.
+            Answer is $a_n=\frac{3n+1}{5^n}$. But we solve it by splitting it into two parts, the numerator and denominator.
+
+            Numerator: This is an arithmetic sequence, following the pattern $a,a+d,a+2d,a+3d\ldots$ The general/explicit formula is $a_n=a_1+d(n-1)$ and the recursive formula is $a_n=a_{n-1}+d$ \index{Arithmetic sequence!$a_n=a_1+d(n-1)$}\index{Arithmetic sequence!$a_n=a_{n-1}+d$}
+            \begin{align*}
+                d&=7-4&a_1&=4\\
+                d&=3\\
+                a_n&=4+3(n-1)\\
+            \end{align*}
+            Denominator: This is a geometric sequence
+            \begin{align*}
+                r&=\frac{25}{5}&a_1&=5\\
+                r&=5\\
+                a_n&=5\times5^{n-1}\\
+            \end{align*}
+            Put together,
+            \begin{align*}
+                a_n&=\frac{4+3(n-1)}{5\times5^{n-1}}\\
+                a_n&=\frac{3n+1}{5^n}\\
+                a_{21}&=\frac{64}{476837158203125}\\
+            \end{align*}
+            \item $25,16,9,4$
+            
+            Again, this is not a arithmetic or geometric sequence but a pattern. 
+
+            It's pretty difficult to describe this, if you want me to go into detail, ask me on discord.
+            \begin{align*}
+                a_n&=(6-n)^2\\
+                a_{21}&=(6-21)^2\\
+                a_{21}&=225\\
+            \end{align*}
+        \end{enumerate}
+    \end{enumerate}
+    \item If the terms $27,x,y,8$ form a geometric sequence, find x and y.
+    \begin{align*}
+        a_1&=27\\
+        a_4&=27r^{4-1}\\
+        8&=27r^3\\
+        \frac{8}{27}&=r^3\\
+        \sqrt[3]{\frac{8}{27}}&=r\\
+        \frac{2}{3}&=r\\
+        x&=27\times \frac{2}{3}\\
+        x&=18\\
+        y&=18\times \frac{2}{3}\\
+        y&=12\\
+    \end{align*}
+    \item Determine the sum of the series $81+77+73+\ldots +5$.
+    
+    This is an arithmetic sequence, the formula for the sum of series is $S_n=\frac{n(a_1+a_n)}{2}$\index{Arithmetic sequence!$S_n=\frac{n(a_1+a_n)}{2}$}
+    \begin{align*}
+        d&=77-81&a_1&=81\\
+        d&=-4&a_n&=5\\
+        5&=81-4(n-1)\\
+        -76&=-4(n-1)\\
+        19&=n-1\\
+        20&=n\\
+        S_n&=\frac{20(81+5)}{2}\\
+        S_n&=860\\
+    \end{align*}
+    \item Determine the value of n for which $(2^1)(2^2)(2^3)(2^4)\ldots(2^n)=2^210$
+    
+    Remembering the power rule, $a^n\times a^m=a^{n+m}$ we see the above equals $2^{1+2+3+4+\ldots +n}=2^210$ we see the exponent is a arithmetic sequence \index{Exponent rules!$a^n\times a^m=a^{n+m}$}
+    \begin{align*}
+        a_1&=1&a_n&=n\\
+        \text{There are n terms}\\
+        S_n&=\frac{n(1+n)}{2}\\
+        210&=\frac{n(n+1)}{2}\\
+        420&=n^2+n\\
+        0&=n^2+n-420\\
+        0&=(n-20)(n+21)\\
+        n&=20\\
+    \end{align*}
+    \item Determine a recursion formula for the sequence $14,10,4,6,-2,\ldots$
+    
+    This is an arithmetic sequence
+    \begin{align}
+        d&=10-14&a_1&=14\\
+        d&=-4\\
+        a_n&=14-4(n-1)\\
+    \end{align}
+    \item For the geometric sequence $2,6,18,\ldots,39366$ what term is 39366?
+    
+    This is a geometric sequence
+    \begin{align*}
+        r&=\frac{6}{2}&a_1&=2\\
+        r&=3\\
+        a_n&=2\times 3^{n-1}\\
+        39366&=2\times 3^{n-1}\\
+        19683&=3^{n-1}\\
+        3^9&=3^{n-1}\\
+        9&=n-1\\
+        10&=n\\
+    \end{align*}
+    \item Determine the sum of the series $14+11+8+\ldots -61$.
+    
+    This is an arithmetic sequence
+    \begin{align*}
+        d&=11-14&a_1&=14\\
+        d&=-3\\
+        -61&=14-3(n-1)\\
+        -75&=-3(n-1)\\
+        25&=n-1\\
+        26&=n\\
+        S_n&=\frac{26(14-61)}{2}\\
+        S_n&=-661\\
+    \end{align*}
+    \item A principal of \$200 is invested at the end of each year for 15 years at 5.2\% compounded annually. Determine the amount after 15 years.
+    
+    \begin{align*}
+        A&=200&r&=0.052&n&=1&t&=15\\
+    \end{align*}
+    \begin{align*}
+        A&=P(1+\frac{r}{n})^{n t}\\
+        &=200(1+\frac{0.052}{1})^{15}\\
+        &=427.82\\
+    \end{align*}
+    \item Write a formula for the nth term of each sequence $\frac{1}{2},\frac{4}{6},\frac{7}{18},\frac{10}{54},\frac{13}{162},\ldots$
+    
+    This is a similar problem to 38 ii. The numerator is an arithmetic sequence, the denominator is a geometric sequence.
+
+    Numerator:
+    \begin{align*}
+        d&=4-1&a_1=1\\
+        d&=3\\
+        a_n&=1+3(n-1)\\
+    \end{align*}
+    Denominator: 
+    \begin{align*}
+        r&=\frac{6}{2}&a_1&=2\\
+        r&=3\\
+        a_n&=2\times3^{n-1}\\
+    \end{align*}
+    Put together,
+    \begin{align*}
+        a_n&=\frac{1+3(n-1)}{2\times3^{n-1}}
+    \end{align*}
+    \item Given the series $3+7+11+15+19+\ldots$, determine $a_{100}$ and $S_{100}$.
+    
+    \begin{align}
+        d&=7-3&a_1&=3\\
+        d&=4\\
+        a_n&=3+4(n-1)\\
+        a_{100}&=3+4(100-1)\\
+        a_{100}&=399\\
+        S_{100}&=\frac{100(4+399)}{2}\\
+        S_{100}&=20150\\
+    \end{align}
+
+    \item Solve the exponential equation $4^{2x-3}=8^{5x+3}$.
+    
+    \begin{align*}
+        4^{2x-3}&=8^{5x+3}\\
+        (2^2)^{2x-3}&=(2^3)^{5x+3}\\
+        2^{2(2x-3)}&=2^{3(5x+3)}\\
+        2(2x-3)&=3(5x+3)\\
+        4x-6&=15x+9\\
+        -15&=11x\\
+        x&=-\frac{15}{11}\\
+    \end{align*}
+    \item Find the amount of \$1000 at 6.38\% compounded quarterly for 3 years. 
+    
+    \begin{align*}
+        P&=1000&r&=0.0638&n&=4&t&=3
+    \end{align*}
+    \begin{align*}
+        A&=1000(1+\frac{0.0638}{4})^{4\times3}\\
+        &=1209.12\\
+    \end{align*}
+    \textit{\#49 and \#50 were both in one question in the exam sample. So \#50 in the paper is \#51 here.}
+
+    \item How much do you have to invest each month starting today in order to become a millionaire in 40 years. The investment pas you 12\% compounded monthly.
+    
+    \begin{align*}
+        FV&=1000000&r&=0.12&n&=12&t&=40
+    \end{align*}
+    \begin{align*}
+        FV&=P\frac{(1+\frac{r}{n})^{nt}-1}{\frac{r}{n}}\\
+        1000000&=P\frac{(1+\frac{0.12}{12})^{12\times40}}{\frac{0.12}{12}}\\
+        \frac{1000000}{\frac{(1+\frac{0.12}{12})^{12\times40}}{\frac{0.12}{12}}}&=P\\
+        84.28&=P\\
+    \end{align*}
+    \item Write an explicit formula for the sequence determined by the recursion formula. $a_1=-4,a_n=a_{n-1}+6$.
+    \begin{align*}
+        a_1&=-4&d&=6\\
+        a_n&=-4+6(n-1)\\
+    \end{align*}
 \end{enumerate}
+
+Ok, that's it. I just want to clarify that many the solutions would not get you full points on a real exam, you would need a concluding sentence, listing variables, and tables/mapping to show your steps when graphing. Here I used $a_n$ for sequence questions, but in the exam, it is better to use $t_n$.
+I also wrote the interest formulas a bit differently as I think this is a bit more detailed. If you are a bit confused after that, ask me on discord.
+This exam sheet is also not complete, there are a few that this paper does not include.
+
+\section{Unused Formulas}
+
+Some Formulas that are not used, but have learned in the school year.
+
+Sum of geometric sequence: $S_n=\frac{a(r^n-1)}{r-1}$\index{Geometric sequence!$S_n=\frac{a(r^n-1)}{r-1}$}
+
+Present value annuity formula: $PV=P\frac{1-(1+\frac{r}{n}^{-nt})}{\frac{r}{n}}$\index{Present Value Formula!$PV=P\frac{1-(1+\frac{r}{n}^{-nt})}{\frac{r}{n}}$}
+
+SOH,CAH,TOA: $\sin x= \frac{o}{a},\cos x=\frac{a}{h},\tan x=\frac{o}{a}$
+\index{sin!$\sin x= \frac{o}{a}$}\index{cos!$\cos x=\frac{a}{h}$}\index{tan!$\tan x=\frac{o}{a}$}
+
+Inverse trig: $\csc x=\frac{1}{\sin x},\sec x=\frac{1}{\cos x},\cot x=\frac{1}{\tan x}$
+\index{csc!$\csc x=\frac{1}{\sin x}$}\index{sec!$\sec x=\frac{1}{\cos x}$}\index{cot!$\cot x=\frac{1}{\tan x}$}
+
+Simple interest: $A=Prt$
+\index{Simple interest!$A=Prt$}
+
+Exponent rules: $(a^n)^m=a^{nm}$
+\index{Exponent rules!$(a^n)^m=a^{nm}$}
 \printindex
 \end{document}

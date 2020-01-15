@@ -1,0 +1,100 @@
+\documentclass[10pt,landscape]{article}
+\usepackage{multicol}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage[landscape]{geometry}
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage{amsmath}
+
+%Credit to https://github.com/wch/latexsheet/blob/gh-pages/latexsheet.tex
+% This sets page margins to .5 inch if using letter paper, and to 1cm
+% if using A4 paper. (This probably isn't strictly necessary.)
+% If using another size paper, use default 1cm margins.
+\ifthenelse{\lengthtest { \paperwidth = 11in}}
+	{ \geometry{top=.5in,left=.5in,right=.5in,bottom=.5in} }
+	{\ifthenelse{ \lengthtest{ \paperwidth = 297mm}}
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+    }
+    
+
+\pagestyle{empty}
+
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%x
+                                {\normalfont\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+                                {-1explus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%
+                                {\normalfont\normalsize\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {1ex plus .2ex}%
+                                {\normalfont\small\bfseries}}
+\makeatother
+
+
+% Don't print section numbers
+\setcounter{secnumdepth}{0}
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 0.5ex}
+
+
+\setlength{\premulticols}{1pt}
+\setlength{\postmulticols}{1pt}
+\setlength{\multicolsep}{1pt}
+\setlength{\columnsep}{2pt}
+
+\begin{document}
+\raggedright
+\footnotesize
+\begin{center}
+    \Large{\textbf{Physics Cheat Sheet}} \\
+\end{center}
+\begin{multicols}{3}
+    \setlength{\parindent}{0cm}
+    \section{Kinematics}
+    Position $\ne$ Displacement
+
+    $\vec{d_1}=20m[E]$
+
+    $\Delta \vec{d}=\vec{d}_{final}-\vec{d}_{initial}$
+
+    $\Delta \vec{d}_{total}=\Delta\vec{d}_{1}+\Delta\vec{d}_{2}$
+
+    $\Delta \vec{d}=\vec{v}\times \Delta t$
+
+    $\vec{a}=\frac{\Delta \vec{v}}{\Delta \vec{t}}=\frac{\vec{v}_f-\vec{v}_i}{t_2-t_1}$
+
+    $\vec{v}_f=\vec{v}_i+\vec{a}\times \Delta t$
+
+    % \section{Comparing Graphs of Linear Motion}
+    \section{Five Key Equations}
+    \begin{align*}
+        \vec{a}&=\frac{\vec{v}_f-\vec{v}_i}{\Delta t} & \Delta \vec{d}\\
+        \Delta \vec{d}&=\frac{\vec{v}_f+\vec{v}_i}{2}\Delta t&\vec{a}\\
+        \Delta \vec{d}&=\vec{v}_1\Delta t+\frac{1}{2}\vec{a}\Delta t^2&\vec{v}_2 \\
+        \Delta \vec{d}&=\vec{v}_2\Delta t-\frac{1}{2}\vec{a}\Delta t^2&\vec{v}_1 \\
+        \vec{v}_2^2&=\vec{v}_1^2+2\vec{a}\Delta \vec{d}&\Delta t\\
+    \end{align*}
+    
+    $g=-9.8$ $m/s^2$
+
+    \section{Adding Vectors}
+    $\Delta \vec{d}=n[E\theta^{\circ}N]$
+
+    $\Delta \vec{d}_x=n$
+
+
+
+
+
+
+    \blindtext[5]
+\end{multicols}
+\end{document}
