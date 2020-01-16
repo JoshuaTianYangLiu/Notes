@@ -6,6 +6,14 @@
 \usepackage{hyperref}
 \usepackage{blindtext}
 \usepackage{amsmath}
+\usepackage{mathtools}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\newcommand{\ve}[1]{\overrightarrow{#1}}
+\newcommand{\lam}{\lambda}
+\newcommand{\ti}{\times}
+
+
 
 %Credit to https://github.com/wch/latexsheet/blob/gh-pages/latexsheet.tex
 % This sets page margins to .5 inch if using letter paper, and to 1cm
@@ -61,40 +69,210 @@
     \section{Kinematics}
     Position $\ne$ Displacement
 
-    $\vec{d_1}=20m[E]$
+    $\ve{d_1}=20m[E]$
 
-    $\Delta \vec{d}=\vec{d}_{final}-\vec{d}_{initial}$
+    $\Delta \ve{d}=\ve{d}_{final}-\ve{d}_{initial}$
 
-    $\Delta \vec{d}_{total}=\Delta\vec{d}_{1}+\Delta\vec{d}_{2}$
+    $\Delta \ve{d}_{total}=\Delta\ve{d}_{1}+\Delta\ve{d}_{2}$
 
-    $\Delta \vec{d}=\vec{v}\times \Delta t$
+    $\Delta \ve{d}=\ve{v}\ti \Delta t$
 
-    $\vec{a}=\frac{\Delta \vec{v}}{\Delta \vec{t}}=\frac{\vec{v}_f-\vec{v}_i}{t_2-t_1}$
+    $\ve{a}=\frac{\Delta \ve{v}}{\Delta \ve{t}}=\frac{\ve{v}_f-\ve{v}_i}{t_2-t_1}$
 
-    $\vec{v}_f=\vec{v}_i+\vec{a}\times \Delta t$
+    $\ve{v}_f=\ve{v}_i+\ve{a}\ti \Delta t$
 
     % \section{Comparing Graphs of Linear Motion}
     \section{Five Key Equations}
     \begin{align*}
-        \vec{a}&=\frac{\vec{v}_f-\vec{v}_i}{\Delta t} & \Delta \vec{d}\\
-        \Delta \vec{d}&=\frac{\vec{v}_f+\vec{v}_i}{2}\Delta t&\vec{a}\\
-        \Delta \vec{d}&=\vec{v}_1\Delta t+\frac{1}{2}\vec{a}\Delta t^2&\vec{v}_2 \\
-        \Delta \vec{d}&=\vec{v}_2\Delta t-\frac{1}{2}\vec{a}\Delta t^2&\vec{v}_1 \\
-        \vec{v}_2^2&=\vec{v}_1^2+2\vec{a}\Delta \vec{d}&\Delta t\\
+        \ve{a}&=\frac{\ve{v}_f-\ve{v}_i}{\Delta t} & \Delta \ve{d}\\
+        \Delta \ve{d}&=\frac{\ve{v}_f+\ve{v}_i}{2}\Delta t&\ve{a}\\
+        \Delta \ve{d}&=\ve{v}_1\Delta t+\frac{1}{2}\ve{a}\Delta t^2&\ve{v}_2 \\
+        \Delta \ve{d}&=\ve{v}_2\Delta t-\frac{1}{2}\ve{a}\Delta t^2&\ve{v}_1 \\
+        \ve{v}_2^2&=\ve{v}_1^2+2\ve{a}\Delta \ve{d}&\Delta t\\
     \end{align*}
     
     $g=-9.8$ $m/s^2$
 
     \section{Adding Vectors}
-    $\Delta \vec{d}=n[E\theta^{\circ}N]$
+    $\Delta \ve{d}=n$ m$[E\theta^{\circ}N]$
 
-    $\Delta \vec{d}_x=n$
+    $\Delta \ve{d}_x=n\cos\theta$
+
+    $\Delta \ve{d}_y=n\sin\theta$
+
+    $\Delta \ve{d}_T^2=\Delta \ve{d}_1+\Delta\ve{d}_2$
+
+    $\Delta \ve{d}_{T_x}=\Delta\ve{d}_{1_x}+\Delta\ve{d}_{2_x}$
+
+    $\Delta \ve{d}_{T_y}=\Delta\ve{d}_{1_y}+\Delta\ve{d}_{2_y}$
+
+    $\abs{\Delta \ve{d}_T}=\sqrt{(\Delta \ve{d}_{1_x}-\Delta \ve{d}_{2_x})^2+(\Delta \ve{d}_{1_y}-\Delta \ve{d}_{2_y})^2}$
+
+    $\theta=\tan(\frac{\Delta \ve{d}_y}{\Delta \ve{d}_x})$
+
+    % \section{Projectile Motion}
+    \section{Acceleration in Two Dimensions}
+
+    $\ve{v}_{og}=\ve{v}_{om}+\ve{v}_{mg}$
+
+    $1$ N $=1$ kg$\frac{m}{s^2}$
+
+    $\ve{F}_g=m\ve{g}$
+
+    $\ve{F}_f\propto F_N$
+
+    $\mu=\frac{F_f}{F_N}$
+
+    \section{Newtons Laws}
+
+    $F_{net_y}=F_N-F_g$
+
+    $F_{net_x}=F_a-F_f$
+
+    $\ve{F}_{net}=m\ti\ve{a}$
+
+    $\abs{\ve{a}}=\frac{\abs{\ve{F}_{net}}}{m}$
+
+    $\ve{F_{Action}}=-\ve{F_{Reaction}}$
+
+    % \section{Applications To Newtons Laws}
+    \section{Work and Energy}
+
+    $1$ J $=1$ kg$\frac{m^2}{s^2}=1$ N$\ti m$
+
+    $W=\ve{F_{app}}\ti\Delta\ve{d}$
+
+    $W=F_a\cos\theta\ti\Delta d$
+
+    $W=\frac{F_{max}\ti\Delta d}{2}$
+
+    $W=F_{av}\ti\Delta d$
+
+    $E_k=\frac{mv^2}{2}$
+
+    $W=\Delta E_k$
+
+    $E_g=mgh$
+
+    $E_{T_1}=E_{T_2}$
+
+    $E_T=E_k+E_g$
+
+    $E_{k_1}+E_{g_1}=E_{k_2}+E_{g_2}$
+
+    $E_{T_1}+W_{done}=E_{T_2}$
+
+    $W_{done}=\Delta E_T$
+
+    $P=\frac{W_{net}}{\Delta t}$
+
+    $\text{Efficiency}=\frac{\text{useful Output Energy}}{\text{Total input energy}}\ti 100\%$
+
+    $E=\frac{E_{output}}{E_{input}}\ti 100\%$
+
+    % \section{Thermal Energy and Heat Transfer}
+    \section{Waves and Sound}
+    $\text{period}=\frac{\text{total time}}{\text{number of cycles}}$
+
+    $\text{frequency}=\frac{\text{number of cycles}}{\text{total time}}$
+
+    $v=\frac{d}{t}$
+
+    $v=\lam\ti\frac{1}{T}$
+
+    $v=\lam\ti f$
+
+    $v=331.4+0.606T$
+
+    $\mu=\frac{m}{L}$
+
+    $v=\sqrt{\frac{F_T}{\mu}}$
+
+    $M=\frac{\text{Speed of object}}{\text{Speed of sound in air}}=\frac{v_o}{v_s}$
+
+    $I=\frac{P}{A}$
+
+    $\frac{I_1}{I_2}=\frac{r_2^2}{r_1^2}$
+
+    $\beta=10\log(\frac{I_2}{I_1})$
+
+    $I_1=10^{-12}$
+
+    $\frac{I_2}{I_1}=(10)^{\frac{\beta_2-\beta_1}{10}}$
+
+    $\lam_2=\lam_1-v_oT$
+
+    $f_2=f_1(\frac{v_s}{v_s-v_o})$
+
+    $f_3=f_1(\frac{v_s}{v_s+v_o})$
+
+    \section{Wave Interactions}
+
+    $\frac{v_1}{v_2}=\frac{\lam_1}{\lam_2}$
+
+    $L=\frac{n\lam}{2}$
+
+    $f_n=nf_1$
+
+    $L=\frac{(2n-1)\lam}{4}$
+
+    $f_n=(2n-1)f_1$
+
+    $L_2-L_1=\frac{\lam}{2}$
+
+    $\frac{f_1}{f_2}=\frac{L_2}{L_1}=\frac{\sqrt{T_1}}{\sqrt{T_2}}=\frac{d_2}{d_1}=\frac{\sqrt{P_2}}{\sqrt{P_1}}$
+
+    $f_B=\abs{f_2-f_1}$
+
+    \section{Electricity}
+    $e^-=-1.6\ti10^{-19}C$
+
+    $Q=N\ti e$
+    
+    $I=\frac{Q}{t}$
+
+    $V=\frac{E}{Q}$
+
+    $E=VIt$
+
+    $R=\frac{V}{I}$
+
+    $R_T=R_1+R_2+R_3+\ldots$
+
+    $V_T=V_1+V-2+V_3+\ldots$
+
+    $I_T=I_1=I_2=I_3=\ldots$
+
+    $\frac{1}{R_T}=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}+\ldots$
+
+    $I_T=I_1+I_2+I_3+\ldots$
+
+    $V_T=V_1=V_2=V_3=\ldots$
+
+    $P=I^2R$
+
+    $P=\frac{V^2}{R}$
+
+    $P=I\ti V$
+
+    \section{Magnetism}
+
+    $P_p=P_s$
+
+    $V_pI_p=V_sI_s$
+
+    $\frac{V_p}{V_s}=\frac{I_s}{I_p}$
+
+    $V\propto N$
+
+    $\frac{V_p}{V_s}=\frac{I_s}{I_p}=\frac{N_p}{N_s}$
+
+    $P_{lost}=I^2R$
 
 
 
 
 
-
-    \blindtext[5]
+    % \blindtext[10]
 \end{multicols}
 \end{document}
