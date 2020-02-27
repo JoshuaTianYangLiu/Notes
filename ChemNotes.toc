@@ -1,0 +1,39 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}Scientific Notation}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Adding/Subtracting}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Multiplying}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Division}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Measurements and Significant digits}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Accurate and Precise}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Percentage Error}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Measurement}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Reporting Measurements}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Counting Significant Figures}{5}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Rounding}{5}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Adding/Subtracting}{6}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Multiplying/Dividing}{6}{subsection.3.8}%
+\contentsline {section}{\numberline {4}Lab Safety}{6}{section.4}%
+\contentsline {section}{\numberline {5}Atom and Periodic Table}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Atomic Math}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Representing Elements}{7}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Isotopes}{8}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Bhor-Rutherford Diagram}{8}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Lewis Diagram}{8}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Isotopes}{8}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Average Atomic Mass}{8}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Radioisotopes}{8}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Calculating Average Atomic Mass}{9}{subsection.6.3}%
+\contentsline {section}{\numberline {7}The Modern Periodic Table}{9}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Effective Nuclear Charge}{10}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Atomic Radius of Ions}{10}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Ionization Energy}{11}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Successive Ionization Energy}{11}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Electron Affinity}{11}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Electronegativity}{11}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Reactivity}{12}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Summary}{12}{subsection.7.8}%
+\contentsline {section}{\numberline {8}Chemical Bonding}{12}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Ionic Bonding}{13}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Covalent Bonding}{13}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Drawing ionic compounds}{13}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Drawing Molecules}{14}{subsection.8.4}%

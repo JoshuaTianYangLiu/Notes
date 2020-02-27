@@ -1,0 +1,532 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{siunitx} 
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{chemfig}
+\usepackage{hyperref}
+\usepackage{makecell}
+\usepackage{isotope}
+\usepackage{bohr}
+\usepackage{chemfig}
+\usepackage{mhchem}
+% Command List
+\newcommand{\sn}[2]{#1\times10^{#2}}
+\newcommand{\lwd}[7]{#1[ \ce{#2} ]$^{#3}$#4[ \lewis{#5,#6} ]$^{#7}$}
+\title{Chemistry Notes}
+\author{Joshua Liu}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents'
+\newpage
+\section{Introduction}
+Google classroom code: 5mxwn3z
+
+\section{Scientific Notation}
+Number written as the production of two numbers:
+A coefficient and some power of 10
+e.g $2.0\times10^{-10}$
+
+General form of Scientific notation: $M\times10^x$ where
+
+$M \ge 1$ but $<10$
+
+$x$ is an integer and exponent
+
+Determine $M$ by moving the decimal point in the original number to the left or right so that \emph{only one non-zero-digit} remains to the left of the decimal
+
+Exercise: $1400000=\sn{1.4}{6}$
+
+$0.000 000 000 066 7=6.67\times10^{-11}$
+
+$5.78\times10^8=578000000$
+
+$85000000=8.5\times10^{7}$
+
+$0.0009=\sn{9}{-4}$
+
+$74000=\sn{7.4}{4}$
+
+$0.0000005=\sn{5}{-6}$
+
+$30000000=\sn{3}{7}$
+
+$864000=\sn{8.64}{5}$
+\subsection{Adding/Subtracting}
+In order to add or subtract numbers in scientific notation \textbf{your exponents must be the same}
+
+Example: 
+\begin{align*}
+    &\sn{6.3}{4}+\sn{2.1}{5}\\
+    &=\sn{0.63}{5}+\sn{2.1}{5}\\
+    &=\sn{2.73}{5}\\
+\end{align*}
+\subsection{Multiplying}
+When multiplying scientific notation you multiple the coefficients and \textbf{add the exponents together}
+
+Example:
+\begin{align*}
+    &\sn{4}{5}\times\sn{2}{2}\\
+    &=\sn{4\times2}{5+2}\\
+    &=\sn{8}{7}
+\end{align*}
+\subsection{Division}
+When dividing, divide the coefficients and \textbf{subtract the exponents}
+
+Example:
+\begin{align*}
+    &(\sn{4}{5})/(\sn{2}{7})\\
+    &=\sn{4/2}{5-7}\\
+    &=\sn{2}{-2}\\
+\end{align*}
+
+Exercise:
+
+$\sn{2.4}{-3}-\sn{1.2}{-2}=\sn{2.4}{-3}-\sn{12}{-3}=\sn{-9.6}{-3}$
+
+$(\sn{7.4}{-8})/(\sn{1.2}{-2})=\sn{7.4/1.2}{-8+2}=\sn{6.2}{-6}$
+
+$\sn{3.45}{4}\times\sn{2.3}{3}=\sn{3.45*2.3}{4+3}=\sn{7.94}{7}$
+
+$\sn{3.6}{5}+\sn{7.82}{4}=\sn{3.6}{5}+\sn{0.782}{5}=\sn{4.4}{5}$
+
+\section{Measurements and Significant digits}
+\subsection{Accurate and Precise}
+Precision: the closeness of a set of measurement of the same quantities made in the same way (how well repeated measurements of a value agrees with one another)
+
+Accuracy: is determined by the agreement between the measured quantity and the correct value.
+
+\href{https://www.dnasoftware.com/wp-content/uploads/2015/07/targets.png}{A good example between the difference of accuracy and precision}
+
+\begin{tabular}{c|c}
+    Precision&Accuracy\\
+    \hline
+    Reproducibility&Correctness\\
+    Check by repeating measurements&Check by using a different method\\
+    \makecell[l]{Poor precision errors from poor\\techniques}&\makecell[l]{Poor accuracy results from procedural\\or equipment flaws}
+\end{tabular}
+
+\subsection{Percentage Error}
+
+$\text{Percentage Error}=\frac{\text{Accepted Value}-\text{Experimental Value}}{\text{Accepted Value}}\times100\%$
+
+\subsection{Measurement}
+
+The number of Significant digits in a value includes all digits that are certain and one that is uncertain
+
+\subsection{Reporting Measurements}
+
+\begin{itemize}
+    \item Using Significant figures
+    \item Report what is known with certainty
+    \item Add one digit of uncertainty (Estimation)
+\end{itemize}
+\subsection{Counting Significant Figures}
+When you report a measured value it is assumed that all the numbers are certain except for the last one, where there is an uncertainty of $\pm1$.
+
+Example: the nail is 6.3 6cm long. The 6.3 are
+certain values and the final 6 is uncertain! There are
+3 significant figures in the value 6.36cm (2 certain
+and 1 uncertain). All measured values will have one
+(and one only) uncertain number (the last one) and
+all others will be certain. The reader can see that the
+6.3 are certain values because they appear on the
+ruler, but the reader has to estimate the final 6.
+
+\subsection{Rounding}
+In all cases, round like normal except for when the number ends with only 5.
+
+If digit before 5 is Even: you round down.
+
+If digit before 5 is Odd: you round up.
+
+It is a good practice to write your numbers in scientific notation to better show your significant digits
+
+\subsection{Adding/Subtracting}
+When adding and Subtracting the answer should have the \textbf{same number of decimal places} as the one with the \textbf{least number of decimal places}.
+
+e.g $12.734-3.0=9.734->9.7$
+
+$13.64 + 0.075 + 67=80.715->81$
+
+$267.8 - 9.36=258.44->258.4$
+\subsection{Multiplying/Dividing}
+When multiplying the answer should have the same number of significant digits as the significant figure with the \textbf{least} significant digits.
+
+e.g $61\times0.00745=0.45445=\sn{4.5}{-1}$
+
+$608.3\times3.45=2098.635=\sn{2.10}{3}$
+
+$4.8\div392=0.012245=\sn{1.2}{-2}$
+
+\section{Lab Safety}
+\begin{enumerate}
+    \item Read and follow all directions exactly as they are written. If in doubt, ask your teacher.
+    \item Never mix chemicals (or perform tests) without your teacher's permission.
+    \item Keep your work area clean and keep all materials (clothing, hair, papers, ect.) away from a flame or heat source.
+    \item Never run or push someone else in the lab. This rule applies at all times.
+    \item Always wear safety goggles whenever you are working with chemicals or other substances that might get into your eyes.
+    \item Immediately notify your teacher if any chemicals gets on your skin or clothing to find out what to do to clean it off.
+    \item Immediately notify your teacher if you get cut or have another injury when performing an experiment.
+    \item Never reach across a flame.
+    \item Never look directly into a test tube when mixing or heating chemicals.
+    \item Always point a test tube away from you and others when heating over a flame or other heat source.
+    \item Never smell a chemical directly from the container. Wave your hand over the opening of the container and "waft" the fumes toward your nose.
+    \item Never taste a chemical unless you are instructed by your teacher to do so.
+    \item Never use broken or chipped glassware.
+    \item Keep lids on bottles and containers when not in use.
+    \item Wash your hands before and after each experiment.
+    \item Always clean up your work area and equipment after an experiment us completed. Equipment must be returned to its proper place.
+\end{enumerate}
+\section{Atom and Periodic Table}
+
+\begin{tabular}{c|c|c|c}
+    Name&Relative Mass&Electric Charge&Location\\
+    \hline
+    Proton&1&+&Nucleus\\
+    Neutron&1&0&Nucleus\\
+    Electron&1/10000&-&Outside the Nucleus\\
+\end{tabular}
+\subsection{Atomic Math}
+
+\textbf{Atomic Number}: Number of protons/electrons
+
+\textbf{Atomic Mass}: \# of protons + \# of neutrons
+\subsection{Representing Elements}
+
+Standard Notation: 
+\isotope[22.990][11]{Na}
+
+\subsection{Isotopes}
+
+\textbf{Isotopes}: atoms of the same element with different numbers of neutrons
+
+\subsection{Bhor-Rutherford Diagram}
+
+Put number of protons and neutrons in the middle
+
+Draw every electrons
+
+e.g \href{https://d2jmvrsizmvf4x.cloudfront.net/BOV8bU6eSfuqDVGVKVbg_atomic_structure_of_sodium.jpg}{Sodium}
+
+\subsection{Lewis Diagram}
+
+Lewis is simpler than Bhor-Rutherford
+
+Put symbol of the element in the centre
+
+Add valence shell around the symbol
+
+e.g Sodium
+
+\lewis{0:2:4.6.,Na}
+
+\section{Isotopes}
+
+Isotopes-Atoms that have the \emph{same} number of protons but \emph{different} number of neutrons are called isotopes.
+
+Isotopes have different mass number.
+
+\subsection{Average Atomic Mass}
+
+Most elements occur naturally as mixtures of isotopes.
+
+The mass number on the periodic table are the weighted average of the most abundant isotopes mass numbers
+
+The atomic mass of an element is a weighted average mass of the atoms in a naturally occurring sample of the element
+
+%TODO: Copied directly from slides Trim down to be concise
+
+\subsection{Radioisotopes}
+Some isotopes are stable, others break apart easily.
+
+Difference in stability is due to the composition of the nuclei
+
+\textbf{Unstable} isotopes emit nuclear radiation are known radioisotopes.
+
+When a radioactive isotope breaks apart we get \textbf{Radioactive Decay}
+
+Three types
+
+\begin{itemize}
+    \item Alpha particles
+    \item Beta particles
+    \item Gamma rays
+\end{itemize}
+
+
+\textbf{Alpha Decay}: loses two protons and two neutrons this particle is called Alpha particle. $\ce{^4_2He}$
+
+$\ce{^{226}_{88}Ra -> ^{222}_{86}Rn + ^4_2He}$
+
+\textbf{Beta Decay}: loses one electron this particle is called Beta particles. $\ce{^0_{-1}\beta}$
+
+$\ce{^{14}_6C -> ^{14}_7N + ^0_{-1}\beta}$
+
+\textbf{Gamma Decay}: loses no mass or charge but loses energy this is called Gamma particles. $\ce{^0_0\gamma}$
+
+$\ce{^{60}_{27}Co -> ^{60}_{27}Co + ^0_0\gamma}$
+
+In terms of size, Alpha particles are the largest, Beta particles are the second, and Gamma particles are the smallest.
+
+Alpha particles can't pass through paper
+
+Beta particles can't pass through aluminum
+
+Gamma particles can partially pass through lead
+
+\subsection{Calculating Average Atomic Mass}
+
+\textit{Basic math, I don't see a reason to write about this}
+
+\section{The Modern Periodic Table}
+
+\textbf{Groups}: vertical columns (1-18)
+
+\noindent\textbf{Periodic}: horizontal rows (1-7)
+
+\noindent\textbf{Periodicity}: The similarities of the elements in the same group is explained by the arrangement of valence electrons
+
+\noindent\textbf{Atomic Radius}: is the distance from the centre of the nucleus of an atom to the outermost electron.
+
+The greater the number of energy levels the greater is the distance of the outermost electron to the centre of it atom's nucleus.
+
+\medskip
+
+The size of the atomic radius cannot be measured exactly because it does not have a sharply defined boundary. The atomic radius is measured by the distance of the centre of two nuclei of two atoms beside each other divided by 2.
+
+\noindent\textbf{Trends in atomic radii}: atomic radii decreases as you move up in a group, and decreases as you move across a period.
+
+\medskip
+
+\noindent\textbf{Force of attraction}: The attraction of the electrons to the nucleus is what keeps the electrons with the nucleus.
+
+\noindent There are two factors that affect the force of attraction
+
+\medskip
+The size of the positive charge determined by the number of protons.
+
+The distance between the outermost electron and the nucleus
+
+\noindent \emph{The balance exists between the attraction of the electron to the nucleus and the repulsion between the electrons themselves.}
+
+\medskip
+\noindent The valence electrons receive a positive charge from the nucleus as the inner electrons weaken the attraction for the valence electrons this is called \textbf{Shielding Effect}
+
+\subsection{Effective Nuclear Charge}
+
+A number assigned to elements to describe the amount of shielding to valence electrons
+
+$$\text{ENC}=\text{\# of Protons}-\text{\# of Inner Electrons}$$
+
+The greater the ENC the stronger the attraction to valence electrons
+
+The greater the ENC the smaller atomic radius
+
+\subsection{Atomic Radius of Ions}
+
+Sodium: $\ce{Na}$
+
+$$ENC=11-10=1$$
+
+\noindent Sodium ion: $\ce{Na^+}$
+
+$$ENC = 11-2=9$$
+
+\noindent Cations will have smaller ionic radius that neutral atom.
+
+\noindent Anions will have a larger ionic radius than the neutral atom.
+
+\subsection{Ionization Energy}
+
+The amount of energy to remove the valence electron to form an ion. 
+
+\href{http://www.vias.org/genchem/atomstruct_12433_05.html}{Refer to first graph}
+
+\medskip
+\noindent Moving up the group, it takes more energy.
+
+\noindent Moving up the period, it takes more energy.
+
+\subsection{Successive Ionization Energy}
+
+After the first Ionization Energy (IE) is removed, the successive IE increases as it becomes more difficult to move the next electrons since the pull from the nucleus becomes stronger.
+
+\medskip
+\noindent There's a huge jump in IE between removing the last valence electron and removing the first electron in the new ring.
+
+\subsection{Electron Affinity}
+
+Electron Affinity is the amount of energy released when an electron is captured by an atom to form a negative ion (anion).
+
+$$\ce{Cl +\text{Electron} -> Cl^- + \text{Energy}}$$
+
+\medskip
+
+\noindent \textbf{Periodic Trend}: Electron Affinity increases as you move up the periods.
+
+\noindent\textbf{Group Trend}: Electron Affinity increases as you move to the right of the group.
+
+\medskip
+\noindent Electron Affinity and Electronegativity follow the same general Trend.
+
+\emph{Halogens are the peaks while noble gases are the troughs.}
+
+\subsection{Electronegativity}
+
+Electronegativity is the tendency an electron would be attracted to a atom when combining with another element.
+
+\emph{The scale is does not have a value like km/h but is an arbitrary value between 0 and 4.}
+
+\noindent In general, \textbf{metals} have a \textbf{low} EN while \textbf{nonmetals} have a \textbf{high} EN.
+
+\medskip
+\textit{Fun fact: Fluorine has the highest EN at 4.}
+
+\medskip
+
+\noindent Refer to the trends of Electron Affinity trend for trend of Electronegativity.
+
+\subsection{Reactivity}
+
+When looking at \textbf{nonmetals}, they lose electrons and the reactivity trend follows the trend of \emph{Electron Affinity}
+
+\medskip
+\noindent When looking at \text{metals}, they gain electrons and the reactivity trend follows the trend of \emph{Ionization Energy}
+
+\subsection{Summary}
+
+\renewcommand{\arraystretch}{1.25}
+\makebox[1 \textwidth][c]{
+    \begin{scriptsize}
+        \begin{tabular}{c|c|c|c}
+            Name&Definition&Group Trend going down&Periodic Trend going left to right\\
+            \hline
+            Atomic Radius&\makecell[c]{Distance from centre of nucleus\\to outermost electron (pm)}&Increases&Decreases\\
+            First IE&Energy to remove outmost electron&Decreases&Increases\\
+            Electron Affinity&Energy released when gaining electron&Decreases&Increases excluding group 18\\
+            Electronegativity&Tendency to gain electrons&Decreases&Increases excluding group 18\\
+            Reactivity Metal&Degree to which metal react&Increases&Decreases\\
+            Reactivity Nonmetals&Degree to which nonmetal react&Decreases&Increases excluding group 18\\
+        \end{tabular}
+    \end{scriptsize}
+}
+\renewcommand{\arraystretch}{1}
+
+\section{Chemical Bonding}
+
+All atoms are  trying to achieve a \textbf{stable octet}
+
+\medskip
+\noindent The proton in one nucleus are attracted to the electron of another nucleus based of their electronegativity
+
+\noindent Ionic bonding: Forms ionic compounds through atoms giving and taking electrons
+
+\noindent Covalent bonding: Forms molecules through atoms by sharing electrons
+
+\noindent Metallic bonding: Creates a an excess of electrons as both are positive ions (Mobile Electrons). Allows it to conduct electricity.
+
+\medskip
+\noindent Metallic Characteristics:
+
+\begin{itemize}
+    \item High melting point, ductile, malleable, shiny
+    \item Hard substance
+    \item Good conductor as solid and liquid
+\end{itemize}
+
+\subsection{Ionic Bonding}
+
+Electrons are \textbf{transferred} between valence shells of atoms.
+
+\noindent Ionic compounds are made of ions
+
+They are called salts or crystals 
+
+\medskip
+\noindent \textbf{Always} forms between metals and non-metals
+
+Ionic compounds formed a difference in electronegativity of 1.7 or greater
+
+\medskip
+\noindent Polyatomic ions always form ionic compounds
+
+Properties
+
+\begin{itemize}
+    \item Hard solids are 22$^{\circ}$C.
+    \item High melting point
+    \item Non-conductive as solids
+    \item Good conductors as liquids or when dissolved in water (aq)
+\end{itemize}
+
+\subsection{Covalent Bonding}
+Electrons are \textbf{shared} between non-metal atoms.
+
+Electronegativity difference less than 1.7
+
+\medskip
+\noindent Covalent bonding forms (two or more) polyatomic ions
+
+Properties
+\begin{itemize}
+    \item Low melting point, low boiling point
+    \item softer solid compared to ionic compounds
+    \item Non conductors, period.
+\end{itemize}
+
+\subsection{Drawing ionic compounds}
+
+\begin{large}
+    Lewis Dot Diagram
+\end{large}
+
+\medskip
+\noindent Represents the valence electrons as dots
+
+e.g: NaCl
+
+\begin{center}
+    [Na]$^+$[ \lewis{0:2:4:6:,Cl} ]$^-$
+\end{center}
+
+e.g: AlS
+
+\begin{center}
+    2[Al]$^{3+}$ 3[ \lewis{0:2:4:6:,S} ]$^{2-}$
+\end{center}
+
+Practice
+\medskip
+
+\renewcommand{\arraystretch}{1.25}
+\begin{center}
+\begin{tabular}{c|c}
+    \ce{LiF}&\lwd{}{Li}{+}{}{0:2:4:6:}{F}{-}\\
+    \ce{MgO}&\lwd{}{Mg}{2+}{}{0:2:4:6:}{O}{2-}\\
+    \ce{CaCl2}&\lwd{}{Cl}{2+}{2}{0:2:4:6:}{Cl}{-}\\
+    \ce{K2S}&\lwd{2}{K}{+}{}{0:2:4:6:}{S}{2-}\\
+\end{tabular}
+\end{center}
+\renewcommand{\arraystretch}{1}
+\subsection{Drawing Molecules}
+
+\textit{I don't do these but they might help}
+
+Steps
+\begin{enumerate}
+    \item Count total valence electrons involved
+    \item Connect the central atom (usually the first in the formula) to the other with single bonds
+    \item Complete valence shells of outer atoms
+    \item Add any extra electrons to central atom
+\end{enumerate}
+
+
+
+\end{document}
