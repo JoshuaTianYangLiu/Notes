@@ -37,3 +37,18 @@
 \contentsline {subsection}{\numberline {8.2}Covalent Bonding}{13}{subsection.8.2}%
 \contentsline {subsection}{\numberline {8.3}Drawing ionic compounds}{13}{subsection.8.3}%
 \contentsline {subsection}{\numberline {8.4}Drawing Molecules}{14}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Drawing Polyatomic Ions}{14}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Types of Covalent Bonds}{15}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}VSEPR Theory}{15}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Shapes of Molecules}{16}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Intermolecular Attraction}{16}{subsection.8.9}%
+\contentsline {section}{\numberline {9}Intermolecular Forces}{16}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Forces of attraction}{16}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Types of Intermolecular forces}{17}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}London Dispersion Forces}{17}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Dipole-Dipole Forces}{17}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Hydrogen Bond Forces}{18}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Chemical Equations}{18}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Word Equations}{18}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Skeleton Equations}{18}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Law of Conservation of Mass}{18}{subsection.10.3}%

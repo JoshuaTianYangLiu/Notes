@@ -17,6 +17,8 @@
 % Command List
 \newcommand{\sn}[2]{#1\times10^{#2}}
 \newcommand{\lwd}[7]{#1[ \ce{#2} ]$^{#3}$#4[ \lewis{#5,#6} ]$^{#7}$}
+\newcommand{\nidt}{\noindent}
+
 \title{Chemistry Notes}
 \author{Joshua Liu}
 \date{\today}
@@ -526,6 +528,238 @@ Steps
     \item Complete valence shells of outer atoms
     \item Add any extra electrons to central atom
 \end{enumerate}
+
+\medskip
+\noindent \textbf{Double Bond} are atoms that share 2 pairs (4 total) electrons
+
+\chemfig{\lewis{2:4:,O}(=[:0]\lewis{0:2:,O})}
+
+\noindent \textbf{Triple Bond} are atoms that share 3 pairs (6 total) electrons
+
+\chemfig{\lewis{4:,N}~[:0]\lewis{0:,N}}
+
+\subsection{Drawing Polyatomic Ions}
+
+Count all valence electrons needed for covalent bonding
+
+\noindent Add or subtract other electrons based on the charge
+
+\bigskip
+
+Ammonium: \ce{NH4+}
+
+$$\Bigg[\text{ }\chemfig{N(-[:0]H)(-[:90]H)(-[:180]H)(-[:270]H)}\text{ }\Bigg]^+$$
+
+Sulfate: \ce{SO4}$^{2-}$
+
+$$\Bigg[\text{ }\chemfig{S(-[:0]\lewis{0:2:6:,O})
+        (-[:90]\lewis{0:2:4:,O})
+        (-[:180]\lewis{2:4:6:,O})
+        (-[:270]\lewis{0:4:6:,O})}\text{ }\Bigg]^{2-}$$
+
+\subsection{Types of Covalent Bonds}
+Non-Polar Bonds
+\medskip
+
+\noindent Electrons shared evenly in the bond
+
+\noindent Electronegativity difference less than 0.4
+\bigskip
+
+\noindent Polar Bonds
+\medskip
+
+\noindent Electrons shared unevenly in the bond
+
+\noindent EN greater than 0.4 and less than 1.7
+
+When an atom in a polar bond has an electron longer than another atom it's represented at $\delta-$ while the other atom is represented as $\delta+$
+
+\subsection{VSEPR Theory}
+
+VSEPR: Valence Shell Electron Pair Repulsion Theory
+
+The theory where electron pairs do their best to spread themselves out so that their repulsion is minimal
+
+\medskip
+\noindent\textbf{Bonding Pairs}: Forms bonds
+\noindent\textbf{Lone Pair}: Do not form bonds
+
+\emph{Lone pairs repel just a bit more than bonding pairs}
+
+\subsection{Shapes of Molecules}
+
+\href{https://www.google.com/search?q=linear+molecule&safe=strict&rlz=1C1CHBF_enCA856CA856&sxsrf=ALeKk00o-TaMxdWagprUupjXBeEAWlu18A:1582906379390&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiP2NLj0fTnAhUoITQIHZTwCOsQ_AUoAXoECBYQAw&biw=1536&bih=792}{\textbf{Linear}}
+
+\nidt\href{https://www.google.com/search?q=bent+molecule&tbm=isch&ved=2ahUKEwjwm-Pk0fTnAhWKUawKHZR5ApwQ2-cCegQIABAA&oq=bent+molecule&gs_l=img.3..0i67l2j0i10i67j0i67j0j0i67j0l4.28630.29122..29348...0.0..0.120.575.0j5......0....1..gws-wiz-img.......0i7i30j0i7i10i30.LCVg3wA0WF0&ei=DTxZXrDhLYqjsQWU84ngCQ&bih=792&biw=1536&rlz=1C1CHBF_enCA856CA856&safe=strict}{\textbf{Bent}}
+
+\nidt\href{data:image/jpeg;base64,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}{\textbf{Trigonal Pyramid}}
+
+\nidt\href{data:image/jpeg;base64,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}{\textbf{Tetrahedral}}
+
+
+\subsection{Intermolecular Attraction}
+
+Attraction between molecules
+
+\medskip
+
+\noindent\textbf{van der Waals Forces}: Weak attraction forces between non-polar molecules
+
+\noindent\textbf{Hydrogen Bonding}: Strong attraction between special polar molecules
+
+\nidt\textbf{Van der Waals}
+
+Non-polar can exist in solid and liquid phases as van der Waal forces keep them together
+
+Exists in diatomics and monoatomics.
+
+Periodicity: increases with molecular mass and closer distance between moleules.
+
+
+\section{Intermolecular Forces}
+
+Forces can be strong or weak.
+
+\medskip
+\nidt Force of attraction dictates how easy it is for gases to turn into liquid and liquid turn into solid
+% Missed notes from Feb 28, 2020 and March 2, 2020
+% TODO: Ask teacher to summarize those slides pg 49 -> Bonding ppt
+
+\subsection{Forces of attraction}
+
+There are two types of forces in liquids and gases
+
+Intermolecular - between molecules
+
+Intramolecular - inside molecule
+
+\medskip
+\nidt Intramolecular forces are what makes chemical bonds
+
+Intramolecular forces are stronger than intermolecular forces (30-400x)
+
+Intermolecular forces are known as van der Waals forces
+
+\subsection{Types of Intermolecular forces}
+
+There are three types of intermolecular forces,
+
+London Dispersion force
+
+Dipole-Dipole force
+
+Hydrogen bond
+% TODO: Notes for 1-18 on Intermolecular forces
+\medskip
+\nidt Note that Dispersion is weaker than Dipole which is weaker than Hydrogen bonds
+
+\textit{A true covalent bond is ~400kcal}
+
+\subsection{London Dispersion Forces}
+
+London Dispersion Forces (Induced Dipole Forces)
+
+Dispersion forces are where molecules have temporary dipoles as a result of two molecules being close to each other.
+
+
+\medskip
+\nidt Dispersion forces are the main forces of non-polar compounds
+
+Using the same idea that you can usually see a pattern in randomness, molecules moving around randomly in the air can be bunched up in one moment and dispersed in another.
+
+As the get closer, they get a temporary dipole.
+
+\emph{The larger the molecule the easier $\delta$ charges are formed}
+
+Molecules that have an even electron distribution are
+
+\begin{itemize}
+    \item Single Atoms
+    \item Molecules of the same element
+    \item Hydrocarbons
+    \item Symmetrical molecules
+\end{itemize}
+
+Trend: As molecular weight increases, so does the boiling point
+\subsection{Dipole-Dipole Forces}
+
+Molecules with permanent dipoles are polar.
+
+Remember polar molecules always have one area in which it is positive and one area in which is negative
+
+Dipole-Dipole forces are stronger than London dispersion forces (2-5 kcal)
+
+\subsection{Hydrogen Bond Forces}
+
+Hydrogen bond is a special form of Dipole-Dipole force but not a true chemical bond
+
+\textit{Strongest intermolecular force}
+
+\medskip
+\nidt Only exists when
+
+\begin{itemize}
+    \item There is a hydrogen atom in the molecule
+    \item Is with \ce{N}, \ce{O}, or \ce{F} in the molecule (These have the highest EN)
+\end{itemize}
+
+The hydrogen atom is always the positive dipole
+
+\ce{N}, \ce{O}, or \ce{F} is always the negative dipole.
+
+Hydrogen bonding is where you have two said molecules, and the hydrogen of one end bonds with one of the three element of the other end.
+
+
+Some Hydrogen bonds are stronger than others.
+$$\ce{F}>\ce{O}>>\ce{N}$$
+
+\ce{HF} has a higher boiling point than \ce{NH3}
+
+
+% TODO: Add a snippet of my mind on how to do things
+
+\section{Chemical Equations}
+\subsection{Word Equations}
+Is identifies what are the reactants and products of a chemical reaction. 
+
+\ce{Sodium + Chloride -> Sodium Chloride}
+
+\subsection{Skeleton Equations}
+
+Lists the chemical formula of each reactant on the left and products on the right.
+
+\ce{Na_{(s)} + Cl2_{(g)} -> NaCl_{(s)}}
+
+\subsection{Law of Conservation of Mass}
+
+In a chemical reaction, the mass of the products is always equal to the mass of the reactants
+
+\bigskip
+\noindent e.g.
+
+\noindent\ce{Copper(II) Nitrate + Potassium Hydroxide -> Potassium Nitrate + Copper(II) Hydroxide}
+
+\medskip
+\noindent\ce{Cu(NO3)2_{(aq)} + KOH_{(aq)} -> Cu(OH)2_{(s)} + KNO3_{(aq)}}
+
+\medskip
+\begin{tabular}{c|c|c}
+    Atom/Polyatomic Ion&Left Side&Right Side\\
+    \hline
+    \ce{Cu}&1&1\\
+    \ce{NO3}&2&1\\
+    \ce{K}&1&1\\
+    \ce{OH}&1&2\\
+\end{tabular}
+
+\medskip
+\noindent\ce{Cu(NO3)2_{(aq)} + 2KOH_{(aq)} -> Cu(OH)2_{(s)} + 2KNO3_{(aq)}}
+
+
+
+
+
 
 
 
