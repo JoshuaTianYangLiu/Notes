@@ -2,3 +2,8 @@
 *.fls
 *.log
 *.synctex.gz
+*.aux
+*.out
+*.toc
+*.ilg
+*.dvi

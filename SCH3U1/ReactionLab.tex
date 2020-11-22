@@ -1,0 +1,174 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{siunitx} 
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{chemfig}
+\usepackage{hyperref}
+\usepackage{makecell}
+\usepackage{isotope}
+\usepackage{bohr}
+\usepackage{chemfig}
+\usepackage{mhchem}
+\usepackage{tabulary}
+
+% Command List
+\newcommand{\sn}[2]{#1\times10^{#2}}
+\newcommand{\lwd}[7]{#1[ \ce{#2} ]$^{#3}$#4[ \lewis{#5,#6} ]$^{#7}$}
+\newcommand{\nidt}{\noindent}
+
+\title{Reaction of Metal with Water and Acid}
+\author{Joshua Liu}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    After performing the lab and recording the results of each reaction, we had a observation table
+
+    \begin{center}
+        Reactivity of Metal in Water
+    \end{center}
+    \scriptsize
+    \settowidth\tymin{Element}
+    \begin{tabulary}{\linewidth}{C|C|C|C}
+        Element&Physical Properties&Observation in Presence of Water&Observation from gas test \\
+        \hline
+        \hline
+        Na & Soft, Greyish white, Silvery on inside & Fizzes, Fire, Bubbles, Heat, Smoke, Sparks/Pops, Orange fire, \textbf{Acid Test: Purple (Base)} & Pops in presence of fire.\\
+        Mg & Hard, Solid, Silvery, Dull on some surface, Rough texture, Small & Small bubbling, \textbf{Acid Test: Pink/Magenta (Base)} & \\
+        Cu & Round, Brown, Solid, Smooth & No reaction in water, \textbf{Acid Test: Clear} & \\
+        Ca & White/Grey, Splintered, Hard but brittle, Rough texture & Bubbles, Warm, Foam at bottom, \textbf{Acid Test: Pink (Base)}& \textbf{Flame Test: Popped (Hydrogen)}\\
+    \end{tabulary}
+
+    \normalsize
+    \begin{center}
+        Reactivity of Metal in Hydrochloric Acid
+    \end{center}
+    \scriptsize
+    \settowidth\tymin{Element}
+    \begin{tabulary}{\linewidth}{C|C|C|C}
+        Element&Physical Properties&Observation in Presence of Acid&Observation from gas test \\
+        \hline
+        \hline
+        Al & Shiny, Smooth, Solid, Beaded, Scratches & No reaction in Acid & \\
+        Fe & Powder, Black, Magnetic & Bubbles, Cloudy, Cold, Did not fully dissolve & Popped (Hydrogen) \\
+        Mg & Hard, Solid, Silvery, Dull on some surface, Rough texture, Small & Fizzes, White/Cloudy, Warm & Popped (Hydrogen) \\
+        Zn & Shiny, Solid, Grey, Not round or rough but rugged and sharp & Bubbles & Extinguished (Carbon Dioxide)\\
+    \end{tabulary}
+    
+    \normalsize
+    \bigskip
+    \noindent 1. Rank the elements tested in Part A and Part B from least reactive to most reactive
+
+    \begin{multicols}{2}
+        \medskip
+        \noindent\textbf{Least to Most}
+        \begin{enumerate}
+            \item Copper
+            \item Iron
+            \item Zinc
+            \item Aluminum
+            \item Magnesium
+            \item Sodium
+            \item Calcium
+        \end{enumerate}
+    \end{multicols}
+
+    \medskip
+    \noindent 2. Sort the elements you tested into their respective groups in the periodic table. State the apparent order of reactivity as one proceeds down a group. Does reactivity increase or decrease? 
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item Group 1
+            \begin{enumerate}
+                \item Sodium
+            \end{enumerate}
+            \item Group 2 (Least to Most)
+            \begin{enumerate}
+                \item Magnesium (Period 3)
+                \item Calcium (Period 4)
+            \end{enumerate}
+            \item Group 8
+            \begin{enumerate}
+                \item Iron
+            \end{enumerate}
+            \item Group 11
+            \begin{enumerate}
+                \item Copper
+            \end{enumerate}
+            \item Group 12
+            \begin{enumerate}
+                \item Zinc
+            \end{enumerate}
+            \item Group 13
+            \begin{enumerate}
+                \item Aluminum
+            \end{enumerate}
+        \end{itemize}
+    \end{multicols}
+    
+    Given the data from group 2, as you go down a group the reactivity increases.
+
+    \medskip
+    \noindent 3. Sort the elements you tested in part A and B into periods. State the apparent order of reactivity as one proceeds across a period. Does reactivity increase or decrease?
+
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item Period 3 (Least to Most)
+            \begin{enumerate}
+                \item Aluminum (Group 13)
+                \item Magnesium (Group 2)
+                \item Sodium (Group 1)
+            \end{enumerate}
+            \columnbreak
+            \item Period 4 (Least to Most)
+            \begin{enumerate}
+                \item Copper (Group 11)
+                \item Iron (Group 8)
+                \item Zinc (Group 12)
+                \item Calcium (Group 2)
+            \end{enumerate}
+        \end{itemize}
+    \end{multicols}
+
+    Given the data from Period 3 and 4, the general trend of reactivity across a period is, as you go across a period, the reactivity decreases.
+
+    \bigskip
+    \noindent 4. Is an acid or base produced when a metal reacts with water? How do you know? 
+
+    Given the data, for the metals which bubbled and showed a reaction, a phenolphthalein test showed a base was produced.
+
+    \bigskip
+    \noindent 5. Based on the gas test carried out in Part A and Part B, what gas(es) is/are produced?
+
+    Given the data accumulated during the experiment, a majority of gases that are produced in these reactions are hydrogen gas as they popped during the flame test. Only one reaction showed carbon dioxide was produced when performing the gas test.
+
+    \bigskip
+    \noindent 6. From the results observed in this lab, predict what might happen if you were to drop a piece of potassium into a beaker of water. Explain your hypothesis
+
+    Given the conclusions shown in question 2 and 3 as you go down a group, reactivity increases and as you go across, reactivity decreases. As a hypothesis, if potassium was dropped into water, I would predict there would be a large reaction, larger than sodium as potassium is on the bottom left of the table, where metals are the most reactive. I would also predict the reaction be similar to sodium as they lie in the same group. 
+
+    \bigskip
+    \noindent 7. Connect the trend observed in metal reactivity to atomic radius and ionization energy. Write a short paragraph to explain the trends.
+
+    Looking at metal reactivity, the level of a metal's reaction is the tendency to undergo a reaction. In other words, how easily an electron can be removed. This is determined by how likely an valence electron is able to transfer from a metal to another substance. Metal reactivity connects to ionization energy as ionization energy is the trend of the amount of energy to remove the outermost electron, metal reactivity has an opposite trend to ionization energy as the amount of energy to remove an electron decreases, the ability to lose an electron becomes easier. metal reactivity also is connected to atomic radius as ionization energy is connected to metal reactivity, as your outmost electron grows farther away from the center, it becomes easier for the electron to be lost in a reaction.
+
+    \subsection*{Sources of Error}
+    Did the design of this experiment and/or the equipment used enable you to collect enough evidence to answer the questions? How could it have been improved? Please list at least 2 sources of errors, how the error affected the results and how you would improve for next time. Use the chart format outlined in your lab report guidelines. Note: Sources of error are not the same as human error.
+
+    I found that the design of this experiment gave me a limited amount of data for me to make a decision which I do not feel fully confident about. Although, I do understand the data was limited for out safety.
+    
+    A source of error I found was that the stoppers were too large for the test tubes, meaning they had to be balanced on top on the test tube, for the 20 minute wait period, some stoppers fell off but were quickly put back on. This would affect out results as gas would have escaped through crevices of the oversized stopper, this would have affected out experiment greatly as we would not have enough concentration of gas to accurately perform the gas test. Next time, I will find proper stoppers so that they will fit the test tube.
+
+    Another source of error would have been the temperature of the water, some metals react better when placed in cold or hot water. This could have affected the results and one might not react due to the temperature. This would give misleading data which would lead to the wrong conclusion. We could improve next time by researching the relative elements and the temperature at which they react to water.
+
+    \subsection*{Conclusion}
+
+    What we discovered in this lab is the trend in metal reactivity as you see what happens when certain metals react with water and/or acid.
+    
+
+
+\end{document}

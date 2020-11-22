@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{siunitx} 
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+\usepackage{cancel}
+\usepackage{wrapfig}
+\usepackage{imakeidx}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{hyperref} 
+\usepackage[margin=1in]{geometry}
+\usepackage{polynom}
+\usepackage{subfiles}
+
+\title{Math Notes}
+\author{Joshua Liu}
+\date{\today}
+
+\makeatletter
+\def\pld@CF@loop#1+{%
+    \ifx\relax#1\else
+        \begingroup
+          \pld@AccuSetX11%
+          \def\pld@frac{{}{}}\let\pld@symbols\@empty\let\pld@vars\@empty
+          \pld@false
+          #1%
+          \let\pld@temp\@empty
+          \pld@AccuIfOne{}{\pld@AccuGet\pld@temp
+                            \edef\pld@temp{\noexpand\pld@R\pld@temp}}%
+           \pld@if \pld@Extend\pld@temp{\expandafter\pld@F\pld@frac}\fi
+           \expandafter\pld@CF@loop@\pld@symbols\relax\@empty
+           \expandafter\pld@CF@loop@\pld@vars\relax\@empty
+           \ifx\@empty\pld@temp
+               \def\pld@temp{\pld@R11}%
+           \fi
+          \global\let\@gtempa\pld@temp
+        \endgroup
+        \ifx\@empty\@gtempa\else
+            \pld@ExtendPoly\pld@tempoly\@gtempa
+        \fi
+        \expandafter\pld@CF@loop
+    \fi}
+\def\pld@CMAddToTempoly{%
+    \pld@AccuGet\pld@temp\edef\pld@temp{\noexpand\pld@R\pld@temp}%
+    \pld@CondenseMonomials\pld@false\pld@symbols
+    \ifx\pld@symbols\@empty \else
+        \pld@ExtendPoly\pld@temp\pld@symbols
+    \fi
+    \ifx\pld@temp\@empty \else
+        \pld@if
+            \expandafter\pld@IfSum\expandafter{\pld@temp}%
+                {\expandafter\def\expandafter\pld@temp\expandafter
+                    {\expandafter\pld@F\expandafter{\pld@temp}{}}}%
+                {}%
+        \fi
+        \pld@ExtendPoly\pld@tempoly\pld@temp
+        \pld@Extend\pld@tempoly{\pld@monom}%
+    \fi}
+\makeatother
+
+\newcommand\longdiv[2]{%
+$\strut#1$\kern.25em\smash{\raise.3ex\hbox{$\big)$}}$\mkern-8mu
+        \overline{\enspace\strut#2}$}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+Thanks to google, \hyperlink{https://docs.google.com/viewer?a=v&pid=sites&srcid=b2Nkc2IuY2F8bXItbGV2ZXJzLXdvb2Ryb2ZmZS1oc3xneDo1NWNkMGZhODA2MTVmNDFk}{Advanced Function Textbook}
+% file:///C:/Users/Joshua/Downloads/Nelson%20Advanced%20Functions%2012.pdf
+\begin{itemize}
+    \item 30\% Exam
+    \item 55\% Tests
+    \item 10\% Quizes
+    \item 5\% Assignments
+\end{itemize}
+
+\subfile{day1/day1.tex}
+\subfile{day2/day2.tex}
+\subfile{day3/day3.tex}
+\subfile{day4/day4.tex}
+\subfile{day5/day5.tex}
+\subfile{day6/day6.tex}
+\subfile{day7/day7.tex}
+%REE%
+
+
+
+
+
+
+
+\end{document}

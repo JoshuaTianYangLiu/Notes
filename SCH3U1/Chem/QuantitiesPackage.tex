@@ -1,0 +1,141 @@
+\documentclass[10pt]{article}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage{mhchem}
+\usepackage{ifthen}
+\usepackage{amsmath}
+
+\usepackage{ulem}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+
+
+\title{Quantities Package}
+\author{Joshua Liu}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    \item Calculate the following
+    \begin{enumerate}
+        \item Calculate the mass of \ce{Cl2} that combines with 2.36 g of \sout{\ce{Cl2}} \textit{(I'm assuming this was an error and is \ce{H2})} to form \ce{HCl} in the following reaction
+        
+        \ce{H2_{(g)} + Cl2_{(g)} -> 2HCl_{(g)}}
+
+        \bigskip
+        $$2.36\text{ g }\ce{H2}*\frac{1\text{ mol }\ce{H2}}{2*1.01\text{ g }\ce{H2}}*\frac{1\text{ mol }\ce{Cl2}}{1\text{ mol }\ce{H2}}*\frac{2*35.45\text{ g }\ce{Cl2}}{1\text{ mol }\ce{Cl2}}$$
+
+        $$=82.83\text{ g }\ce{Cl2}$$
+
+        $\therefore$ The mass required of \ce{Cl2} to combine with 2.36 g of \ce{H2} is 82.83 g.
+        \bigskip
+        \item What mass of \ce{Al(OH)3} is formed when 7.5 g of \ce{H2O} reacts with excess of \ce{AlP}? The balanced chemical equation is
+        
+        \ce{AlP + 3H2O -> PH3 + Al(OH)3}
+        \bigskip
+        $$7.5\text{ g }\ce{H2O}*\frac{1\text{ mol }\ce{H2O}}{2*1.01+16\text{ g }\ce{H2O}}*\frac{1\text{ mol }\ce{Al(OH)3}}{3\text{ mol }\ce{H2O}}*\frac{26.98+(16+1.01)*3\text{ g }\ce{Al(OH)3}}{1\text{ mol }\ce{Al(OH)3}}$$
+
+        $$=10.82\text{ g }\ce{Al(OH)3}$$
+
+        $\therefore$ 10.82 g of \ce{Al(OH)3} is formed with 2.36 g of \ce{H2} and excess of \ce{AlP}.
+    \end{enumerate}
+    \bigskip
+    \item Given the following equation
+    
+    \ce{Al2(SO3)3 + 6 NaOH -> 3Na2SO3 + 2 Al(OH)3}
+    \begin{enumerate}
+        \item If you start with 16 g of \ce{Al2(SO3)3} and 12.5 g of \ce{NaOH}, determine the limiting reagent.
+        \medskip
+
+        What we will do is choose an arbitrary compound say, \ce{Al2(SO3)3} and calculate the mass needed to completely react with \ce{Al2(SO3)3} if it's less than the given mass of \ce{NaOH}, then \ce{Al2(SO3)3} is the limiting reagent, otherwise \ce{NaOH} is the limiting reagent.
+        \medskip
+
+        Molar Mass of \ce{Al2(SO3)3} = $26.09*2+(32.07+16*3)*3=292.39$ g/mol
+
+        Molar Mass of \ce{NaOH} = $22.99+16.00+1.01=40.00$ g/mol
+        $$16\text{ g }\ce{Al2(SO3)3}*\frac{1\text{ mol }\ce{Al2(SO3)3}}{292.39\text{ g }\ce{Al2(SO3)3}}*\frac{6\text{ mol }\ce{NaOH}}{1\text{ mol }\ce{Al2(SO3)3}}*\frac{40.00\text{ g }\ce{NaOH}}{1\text{ mol }\ce{NaOH}}$$
+
+        $$=13.13\text{ g }\ce{NaOH}$$
+
+        $\therefore$ \ce{NaOH} is the limiting factor as the required mass for a full reaction with \ce{Al2(SO3)3} is greater than the given mass.
+        \bigskip
+        \item Determine the mass of \ce{Na2SO3} produced.
+        \medskip
+
+        As \ce{NaOH} is the limiting reagent, we must calculate the mass of \ce{Na2SO3} with \ce{NaOH}
+        \medskip
+
+        Molar Mass of \ce{Na2SO3} = $2*22.99+32.07+3*16.00=126.05$ g/mol
+
+        $$12.5\text{ g }\ce{NaOH}*\frac{1\text{ mol }\ce{NaOH}}{40.00\text{ g }\ce{NaOH}}*\frac{3\text{ mol }\ce{Na2SO3}}{6\text{ mol }\ce{NaOH}}*\frac{126.05\text{ g }\ce{Na2SO3}}{1\text{ mol }\ce{Na2SO3}}$$
+
+        $$=19.70\text{ g }\ce{Na2SO3}$$
+
+        $\therefore$ The mass of \ce{Na2SO3} produced is 19.70 grams.
+        \bigskip
+        \item Determine the mass of the excess reagent left over.
+        \medskip
+
+        To calculate the mass of the excess reagent, we can calculate the mass used in the reaction with the limiting reagent.
+
+        $$12.5\text{ g }\ce{NaOH}*\frac{1\text{ mol }\ce{NaOH}}{40.00\text{ g }\ce{NaOH}}*\frac{1\text{ mol }\ce{Al2(SO3)3}}{6\text{ mol }\ce{NaOH}}*\frac{292.39\text{ g }\ce{Al2(SO3)3}}{1\text{ mol }\ce{NaOH}}$$
+
+        $$=15.23\text{ g }\ce{Al2(SO3)3}$$
+
+        Mass of excess reagent left over = $16-15.23=0.77\text{ g }\ce{Al2(SO3)3}$
+
+        $\therefore$ The mass of excess reagent left over is 0.77 g of \ce{Al2(SO3)3}
+        \bigskip
+        \item What is the percentage yield if 4.45 g of \ce{Na2SO3} was actually produced? 
+        
+        $$\text{Percentage Yield}=\frac{\text{Actual Yield}}{\text{Theoretical Yield}}*100\%$$
+
+        $$=\frac{4.45\text{ g }\ce{Na2SO3}}{19.70\text{ g }\ce{Na2SO3}}*100\%$$
+
+        $$=23\%$$
+
+        $\therefore$ The percentage yield is 23\% if 4.45 g of \ce{Na2SO3} was actually produced.
+    \end{enumerate}
+    \item A student conducts and experiment involving the following balanced chemical equation
+    
+    \ce{H3PO4 + 3KOH -> K3PO4 + 3H2O}
+
+    What is the percentage yield if the student obtains 49.0 g of \ce{K3PO4} when she combines 67.0 g of \ce{H3PO4} with 62.0 g of \ce{KOH}?
+
+    \bigskip
+
+    Molar Mass of \ce{H3PO4} = $3*1.01+30.97+4*16.00=98.00$ g/mol
+
+    Molar Mass of \ce{KOH} = $39.10+16.00+1.01=56.11$ g/mol
+
+    Molar Mass of \ce{K3PO4} = $3*39.10+30.97+4*16.00=212.27$ g/mol
+    \medskip
+
+    We must first find the limiting factor, then we can use the the limiting reagent to calculate the theoretical yield, which will be used to calculate the percentage yield.
+
+    Using a different method than 2a), we can calculate the limiting factor by calculating the mole of each compound, and whichever is less is the limiting factor.
+    
+    $$67.0\text{ g }\ce{H3PO4}*\frac{1\text{ mol }\ce{H3PO4}}{98.00\text{ g }\ce{H3PO4}}*\frac{1\text{ mol }\ce{K3PO4}}{1\text{ mol }\ce{H3PO4}}=0.68\text{ mol }\ce{K3PO4}$$
+
+    $$62.0\text{ g }\ce{KOH}*\frac{1\text{ mol }\ce{KOH}}{56.11\text{ g }\ce{KOH}}*\frac{1\text{ mol }\ce{K3PO4}}{3\text{ mol }\ce{KOH}}=0.37\text{ mol }\ce{K3PO4}$$
+
+    $\therefore$ The limiting reagent is KOH and we will calculate the theoretical yield with KOH
+
+    As we already know 62 g of \ce{KOH} is 0.37 mol of \ce{K3PO4} we will continue from there.
+
+    $$0.37\text{ mol }\ce{K3PO4}*\frac{212.28\text{ g }\ce{K3PO4}}{1\text{ mol }\ce{K3PO4}}=78.54\text{ g }\ce{K3PO4}$$
+
+    $\therefore$ The theoretical yield is 78.54 g of \ce{K3PO4}
+
+    $$\text{Percentage Yield}=\frac{\text{Actual Yield}}{\text{Theoretical Yield}}*100\%$$
+
+    $$=\frac{49.0\text{ g }\ce{K3PO4}}{78.54\text{ g }\ce{K3PO4}}*100\%$$
+
+    $$=62\%$$
+
+    $\therefore$ The student's percentage yield is 62.
+\end{enumerate}
+
+\end{document}

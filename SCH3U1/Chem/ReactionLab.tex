@@ -1,0 +1,43 @@
+\documentclass[10pt,landscape]{article}
+\usepackage[landscape]{geometry}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage{mhchem}
+\usepackage{ifthen}
+
+
+\ifthenelse{\lengthtest { \paperwidth = 11in}}
+	{ \geometry{top=.5in,left=.5in,right=.5in,bottom=.5in} }
+	{\ifthenelse{ \lengthtest{ \paperwidth = 297mm}}
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+    }
+    
+
+\pagestyle{empty}
+
+
+\title{Observation Table of Single and Double Displacement Reactions}
+\author{Joshua Liu}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{tabularx}{\textwidth}{lXXX}
+    \noalign{\smallskip} \hline \hline \noalign{\smallskip}
+    \textbf{Reaction}&\textbf{Reaction Type}&\textbf{Prediction}&\textbf{Test}\\
+    \hline\\
+    \ce{Fe_{(s)} + CuSO4_{(aq)} -> Cu_{(s)} + FeSO4_{(aq)}}&Single Displacement Reaction (Using Metal activity series)&Will produce a precipitate in the solution, no release of any gases&N/a\\
+    \ce{2Ca_{(s)} + 2HCl_{(aq)} -> 2CaCl_{(aq)} + H2_{(s)}}&Single Displacement Reaction (Produces a Gas)&Will produce bubbles at the bottom of the solution, of which will be hydrogen gas&Gas Test: Burning Splint test\\
+    \ce{Fe + CaCl2 -> No Reaction}&Single Displacement Reaction (No Reaction)&The Iron will rest at the bottom of the solution, with no bubbles or precipitate forming&N/a\\
+    \ce{NaOH_{(aq)} + CuCl2_{(aq)} -> NaCl_{(s)} + Cu(OH)2_{(aq)}}&Double Displacement Reaction (Producing a precipitate)&Will produce a precipitate which rest at the bottom of the solution, \ce{NaCl} is salt&N/a\\
+    \ce{Na2CO3_{(aq)} + 2HCl_{(aq)} -> 2NaCl_{(aq)} + H2O_{(l)} + CO2_{(g)}}&Double Displacement Reaction (Produces a gas)&Will produce \ce{2NaCl_{(aq)} + H2CO3_{(aq)}} but \ce{H2CO3_{(aq)}} is unstable and become \ce{H2O_{(l)} + CO2_{(g)}}, producing carbon dioxide&Gas Test: Burning Splint test\\
+    \ce{NaOH_{(aq)} + HCl_{(aq)} -> NaCl_{(s)} + H2O_{(aq)}}&Double Displacement (Neutralization)&Will produce a salt (\ce{NaCl}) and water (\ce{H2O}), which is a neutralization reaction&N/a\\
+    \ce{NaHCO3_{(aq)} + CaCl2_{(aq)} -> No Reaction}&Double Displacement Reaction (No Reaction)& The sodium bicarbonate will not react with the calcium chloride. The two aqueous solutions will form no precipitate or gas as the solubility table does not state the products of a supposed reaction&N/a
+\end{tabularx}
+    
+\end{document}
+
+% Gas Ca + HCl -> CaCl + H2
+% Metal Fe + CuSO4 -> Cu + FeSO4
+% None Fe + CaCl2
+

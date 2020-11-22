@@ -1,0 +1,91 @@
+\documentclass[../main.tex]{subfiles}
+
+
+\begin{document}
+\subsection{Polynomials}
+
+Say we have a factored polynomial which follows $y=a(x-x_1)(x-x_2)(x-x_3)^3$ it could also be $y=a(x-x_1)(x-x_2)^2$ We can use certain characteristics of the factored form to draw a graph, looking at each factor ($(x-x_n)$) if it has a power (order) of 1 it passes through that x axis
+
+\noindent If it is order 2 it touched the point at the x axis and "bounces off of it"
+
+\noindent Order 3 it changes "concavity" (You will learn this later)
+
+say $y=2(x+1)^2(x-3)$, at $(0,-1)$ it will bounce off the axis, and at $(x-3)$ it will go through that point
+
+View the graph on \hyperlink{https://www.desmos.com/calculator/zn0lesjogb}{Desmos}.
+
+You can also take this idea to find the rough functions of graphs.
+
+Turning points are points in the polynomial which "turn" the way it's facing, better known as maximum and minimum, think of it as the vertices of the polynomial
+
+\subsection{Transformations of cubic and quartic functions}
+
+TLDR: Just transformations of function cubic and quartic functions are involved, (Really just transformation of functions)
+
+\subsection{Dividing Polynomials}
+
+Remember long division is middle school? \longdiv{3}{253} dividing polynomials has the same idea,
+
+$(x^3-2x+2)/(x-4)$
+
+\polylongdiv{x^3+0x^2-2x+2}{x-4}
+
+Dividing by this we get $x^2+4x+14$ remainder $58$, written out is $x^2+4x+14+\frac{58}{x-4}$
+
+There is also synthetic division it's takes less space, and only works in cases where you have $x-x_1$. I suggest long division, it's like a tool which does it all while synthetic only has one use case, but a common one.
+
+
+\noindent Remainder theorem
+
+say you have a polynomial divided by a linear, to find the remainder you solve for x in the linear function and plug that into the polynomial
+
+$$(x^3-2x+2)/(x-4)$$
+
+$$x-4=0 \rightarrow x=4$$
+
+$$4^3-2*4+2=58$$
+
+\textbf{This only works when dividing by linear function}
+
+\noindent You can use this theorem to solve some problems 
+
+$8x^3+10x^2-px-5$ is divisible by $2x+1$
+
+You can use the remainder theorem 
+
+$$2x+1=0 \rightarrow x=-\frac{1}{2}$$
+
+$$P(x)=8x^3+10x^2-px-5$$
+
+$$P(-\frac{1}{2})=\frac{1}{2}p-3=0$$
+
+$$p=6$$
+
+You can also use long division to find it but it will take long (I'd still do it tho :>)
+
+\subsection{Factoring Polynomials}
+
+So you got a formula for factoring quadratic polynomials, what about cubic? quartic? there is a formula for cubic but it's scary.
+
+So what we can do is try to find a factor in a polynomial by brute forcing for a factor.
+
+Say factor $x^3+2x^2-5x-6$, using the factor theorem before try plugging in values and see if you can find one which equals $0$. Through brute force we find $P(-1)=0$ meaning $x+1$ is a factor of the polynomial
+
+\polylongdiv{x^3+2x^2-5x-6}{x+1}
+
+Knowing the factor and the quadratic part we can easily factor the quadratic to get the factored polynomial $(x+1)(x+3)(x-2)$
+
+\subsection{Difference Of Cubes}
+
+Difference of cubes $a^3-b^3=(a-b)(a^2+ab+b^2)$
+
+\noindent Sum of cubes $a^3+b^3=(a^2-ab+b^2)$
+
+\subsection{Solving Polynomials}
+
+$$y=2x(x-1)(x+2)(x-2)$$
+$$x=0,1,-2,2$$
+
+I mean, this is grade 11 polynomials.
+
+\end{document}
